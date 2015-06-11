@@ -5,3 +5,4 @@ Changelog:
 
 1.0
 * Credits name added to attachments as meta data
+* Credits URL added to attachments as meta data
