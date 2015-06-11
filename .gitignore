@@ -11,3 +11,17 @@ wp-content/cache/
 wp-content/upgrade/
 wp-content/uploads/
 wp-content/wp-cache-config.php
+
+# Created by https://www.gitignore.io
+
+#!! ERROR: net is undefined. Use list command to see defined gitignore types !!#
+
+### NetBeans ###
+nbproject/private/
+build/
+nbbuild/
+dist/
+nbdist/
+nbactions.xml
+nb-configuration.xml
+.nb-gradle/
