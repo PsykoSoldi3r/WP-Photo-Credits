@@ -20,9 +20,15 @@
             $attachment = new Attachment( $post->ID );
             
             $form_fields[ Globals::$METADATA_PREFIX.'credit_name'] = array (
-                "label" => __("Credit name: " ),
+                "label" => __("Credit name" ),
                 "input" => "text",
                 "value" => $attachment->credit_name
+            );
+            
+            $form_fields[ Globals::$METADATA_PREFIX.'credit_url'] = array (
+                "label" => __("Credit URL"),
+                "input" => "text",
+                "value" => $attachment->credit_url
             );
             
             return $form_fields;
@@ -33,6 +39,10 @@
             
             if( isset( $attachmentNew[Globals::$METADATA_PREFIX.'credit_name'] ) ){
                 $attachment->credit_name = $attachmentNew[Globals::$METADATA_PREFIX.'credit_name'];
+            }
+            
+            if( isset( $attachmentNew[Globals::$METADATA_PREFIX.'credit_url'] ) ){
+                $attachment->credit_url = $attachmentNew[Globals::$METADATA_PREFIX.'credit_url'];
             }
             
             $attachment->save();
