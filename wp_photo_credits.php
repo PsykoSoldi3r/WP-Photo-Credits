@@ -2,7 +2,7 @@
 
     /*
     Plugin Name: WP Photo Credits
-    Plugin URI: http://www.yourpluginurlhere.com/
+    Plugin URI: https://github.com/PsykoSoldi3r/WP-Photo-Credits
     Version: 1.0
     Author: Joey Kamsteeg
     Description: Add Photo Credits to images
