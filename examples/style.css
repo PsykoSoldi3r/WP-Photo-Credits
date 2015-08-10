@@ -1,0 +1,16 @@
+.wpphotocredit_creditholder{
+    position:relative;
+}
+
+.wpphotocredit_creditholder .wpphotocredit_creditname{
+    position: absolute;
+    color: white;
+    padding: 5px 10px;
+    font-size: 14px;
+    font-family: Helvatica, Arial, san-serif;
+    text-shadow: 0px 1px 3px rgba(0,0,0,1.0);
+    bottom: 0px;
+    left: 0px;
+    font-weight: bold;
+    background-color:rgba(0,0,0,0.5);
+}

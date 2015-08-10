@@ -12,19 +12,26 @@
     require_once dirname(__FILE__).'/classes/form.php';
     require_once dirname(__FILE__).'/classes/attachment.php';
     require_once dirname(__FILE__).'/classes/language.php';
+    require_once dirname(__FILE__).'/classes/settings.php';
 
     class PhotoCredits{
         
         private $form = null;
+        private $settings = null;
         
         public function __construct(){
             $this->createForm();
+            $this->createSettings();
             
             add_action('get_image_tag', array( $this, 'imageTag' ), 0, 4 );
         }
         
         private function createForm(){
             $this->form = new Form();
+        }
+        
+        private function createSettings(){
+            $this->settings = new Settings();
         }
         
         public function imageTag( $html, $id, $alt, $title ){

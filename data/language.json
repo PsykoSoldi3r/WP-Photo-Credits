@@ -2,11 +2,15 @@
     "en-US": {
         "credit_name":"Photographer",
         "credit_url":"Photographer URL",
-        "credit_name_post" : "Photo: "
+        "credit_name_post" : "Photo: ",
+        "custom_css":"You can implement your own style in your theme. For a example press the download button. You can place the example direct in your own stylesheet of your theme. (Example openend in new tab)",
+        "download":"Download"
     },
     "nl-NL":{
         "credit_name":"Fotograaf",
         "credit_url":"URL van Fotograaf",
-        "credit_name_post": "Foto: "
+        "credit_name_post": "Foto: ",
+        "custom_css":"Je kan je eigen CSS implementeren in jouw eigen thema. Druk op de download kom voor een voorbeeld. De voorbeeld kan je direct in je eigen stylesheet plaatsen. (Voorbeeld wordt geopend in nieuwe tabblad)",
+        "download":"Downloaden"
     }
 }
