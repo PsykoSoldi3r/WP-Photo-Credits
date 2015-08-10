@@ -15,7 +15,7 @@
         }
         
         public function getMetaData( $key ){
-            return get_post_meta( $this->post_id, Globals::$METADATA_PREFIX.$key);
+            return get_post_meta( $this->post_id, Globals::$METADATA_PREFIX.$key, true);
         }
         
         public function updateMetaData( $key, $value ){
