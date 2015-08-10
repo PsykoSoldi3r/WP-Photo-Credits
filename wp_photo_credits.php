@@ -11,6 +11,7 @@
     require_once dirname(__FILE__).'/classes/globals.php';
     require_once dirname(__FILE__).'/classes/form.php';
     require_once dirname(__FILE__).'/classes/attachment.php';
+    require_once dirname(__FILE__).'/classes/language.php';
 
     class PhotoCredits{
         
@@ -28,9 +29,10 @@
         
         public function imageTag( $html, $id, $alt, $title ){
             $attachment = new Attachment( $id );
+            $language = new Language();
             
             if( $attachment->credit_name == null ){
-                return $html;
+                return $html;   
             }
             
             if( $attachment->credit_url == null ) {
@@ -38,10 +40,10 @@
             }
             
             $credit_holder = "<a href=".$attachment->credit_url." target='_blank'>";
-            $credit = "<div>".$attachment->credit_name."</div>";
+            $credit = "<div class='".Globals::$STYLE_PREFIX."creditname'>".$language->getText("credit_name_post")." ".$attachment->credit_name."</div>";
             $credit_holder_close = "</a>";
             
-            return "<div>".
+            return "<div class='".Globals::$STYLE_PREFIX."creditholder'>".
                    $html.
                    $credit_holder.$credit.$credit_holder_close.
                    "</div>";

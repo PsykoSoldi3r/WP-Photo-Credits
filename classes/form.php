@@ -18,15 +18,16 @@
         
         public function registerMetadata( $form_fields, $post ){
             $attachment = new Attachment( $post->ID );
+            $language = new Language();
             
             $form_fields[ Globals::$METADATA_PREFIX.'credit_name'] = array (
-                "label" => __("Credit name" ),
+                "label" => __( $language->getText("credit_name") ),
                 "input" => "text",
                 "value" => $attachment->credit_name
             );
             
             $form_fields[ Globals::$METADATA_PREFIX.'credit_url'] = array (
-                "label" => __("Credit URL"),
+                "label" => __( $language->getText("credit_url") ),
                 "input" => "text",
                 "value" => $attachment->credit_url
             );
