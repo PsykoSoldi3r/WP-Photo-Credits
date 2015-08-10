@@ -2,7 +2,7 @@
     "en-US": {
         "credit_name":"Photographer",
         "credit_url":"Photographer URL",
-        "credit_name_post" : "Foto taken by:"
+        "credit_name_post" : "Photo by:"
     },
     "nl-NL":{
         "credit_name":"Fotograaf",
