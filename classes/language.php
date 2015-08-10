@@ -15,6 +15,9 @@
             $this->rawdata = json_decode( $rawdata );
             
             $this->data = $this->rawdata->{ $this->getCode() };
+            if( $this->data == null ){
+                $this->data = $this->rawdata->{ "en-US" };
+            }
         }
         
         public function getText( $key ){

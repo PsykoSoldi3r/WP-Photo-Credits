@@ -2,11 +2,11 @@
     "en-US": {
         "credit_name":"Photographer",
         "credit_url":"Photographer URL",
-        "credit_name_post" : "Photo by:"
+        "credit_name_post" : "Photo: "
     },
     "nl-NL":{
         "credit_name":"Fotograaf",
         "credit_url":"URL van Fotograaf",
-        "credit_name_post": "Foto gemaakt door:"
+        "credit_name_post": "Foto: "
     }
 }
