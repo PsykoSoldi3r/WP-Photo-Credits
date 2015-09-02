@@ -17,8 +17,7 @@ It is easy to get photo credit informatoin in you posts content. When added a ne
 
 B. In your own Wordpress Theme.
 
-Where you would like to get the photo credits information, put the following code in your theme:
+Simple add the following code below into you Wordpress theme. $POST_ID = the ID of the attachment / photo
 ```
 <?php do_action('PhotoCreditsGetInfo', $POST_ID ); ?>
 ```
-$POST_ID must be the ID of the image
